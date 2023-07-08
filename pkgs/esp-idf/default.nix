@@ -1,5 +1,5 @@
 { rev ? "v5.0.2"
-, sha256 ? "sha256-dlmtTjoz4qQdFG229v9bIHKpYBzjM44fv+XhdDBu2Os="
+, sha256 ? "sha256-q1iRyu5kd0w+JLim5qfMKqSxy3Y+mjO+Yz2dUuD6p2Y="
 , toolsToInclude ? [
     "xtensa-esp-elf-gdb"
     "riscv32-esp-elf-gdb"
@@ -35,7 +35,7 @@
 
 let
   src = fetchFromGitHub {
-    owner = "espressif";
+    owner = "ryan4yin";
     repo = "esp-idf";
     rev = rev;
     sha256 = sha256;
